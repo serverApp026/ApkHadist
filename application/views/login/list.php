@@ -18,7 +18,7 @@
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
-<body class="hold-transition login-page" style="background-image: url(<?php echo base_url() ?>assets/upload/image/slider3.jpg);background-size:cover;background-attachment: fixed;">
+<body class="hold-transition login-page bg-success" style="background-size:cover;background-attachment: fixed;">
 <div class="login-box">
   <div class="login-logo">
     <h3 class="text-white"><b><?php echo $title ?></b></h3>

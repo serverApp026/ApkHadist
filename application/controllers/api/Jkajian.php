@@ -14,10 +14,12 @@ class jkajian extends REST_Controller {
     function index_get() {
         $id = $this->get('id');
         if ($id == '') {
+              $this->db->where('status', 'Belum Selesai');
               $jkajian  = $this->db->get('jkajian')->result();
         } else {
-
-            $this->db->where('id', $id);
+            $this->db->where(array('id' => $id,
+            'status' => 'Belum Selesai'));
+            // $this->db->where('id', $id);
             $jkajian = $this->db->get('jkajian')->result();
            
         }

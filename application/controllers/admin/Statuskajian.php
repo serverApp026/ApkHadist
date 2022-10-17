@@ -18,7 +18,7 @@ class Statuskajian extends CI_Controller {
 	public function index()
 	{
 		$statuskajian = $this->statuskajian_model->listing();
-		$data = array('title' => 'Data Status Kajian',
+		$data = array('title' => 'Data Status Harian',
 					   'statuskajian' => $statuskajian,
 						'isi' => 'admin/statuskajian/list'
 					);
@@ -52,7 +52,7 @@ class Statuskajian extends CI_Controller {
 				if ( ! $this->upload->do_upload('gambar')){
 				
 				//end validasi
-				$data = array( 'title' => 'Tambah Status Kajian',
+				$data = array( 'title' => 'Tambah Status Harian',
 								'error'		=> $this->upload->display_errors(),
 								'isi'   => 'admin/statuskajian/tambah'
 								);
@@ -90,7 +90,7 @@ class Statuskajian extends CI_Controller {
 				}
 			}
 			//end masuk database
-			$data = array( 'title' => 'Tambah Status Kajian',
+			$data = array( 'title' => 'Tambah Status Harian',
 							'isi'   => 'admin/statuskajian/tambah'
 								);
 				$this->load->view('admin/layout/wrapper', $data, FALSE);	
@@ -133,7 +133,7 @@ class Statuskajian extends CI_Controller {
 			if ( ! $this->upload->do_upload('gambar')){
 			
 			//end validasi
-			$data = array( 'title' => 'Edit Status Kajian : '.$statuskajian->nama,
+			$data = array( 'title' => 'Edit Status Harian : '.$statuskajian->nama,
 							'statuskajian'	=>$statuskajian,
 							'error'		=> $this->upload->display_errors(),
 							'isi'   => 'admin/statuskajian/edit'
@@ -182,7 +182,7 @@ class Statuskajian extends CI_Controller {
 			redirect(base_url('admin/statuskajian'),'refresh');
 			}}
 		//end masuk database
-		$data = array( 'title' => 'Edit Status Kajian : '.$statuskajian->nama,
+		$data = array( 'title' => 'Edit Status Harian : '.$statuskajian->nama,
 						'statuskajian'	=>$statuskajian,
 						'isi'   => 'admin/statuskajian/edit'
 							);

@@ -55,20 +55,7 @@
 								</div>
 							</div>
 
-							<div class="form-group row">
-								<label class="col-md-2 col-form-label">Telepon</label>
-								<div class="col-md-5">
-								  <input type="text" name="telepon" class="form-control"  placeholder="Telepon" value="<?php echo set_value('telepon') ?>" required>
-								</div>
-							</div>
-
-							<div class="form-group row">
-								<label class="col-md-2 col-form-label">Upload Gambar</label>
-								<div class="col-md-5">
-								 <input type="file" name="gambar" class="form-control p-1" required="required">
-								</div>
-							</div>
-
+					
 							<div class="form-group row">
 								<label class="col-md-2 col-form-label">Akses Level</label>
 								<div class="col-md-5">

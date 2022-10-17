@@ -132,4 +132,4 @@ $autoload['language'] = array();
 |
 |	$autoload['model'] = array('first_model' => 'first');
 */
-$autoload['model'] = array('user_model','jkajian_model', 'jshalat_model','statuskajian_model','doadoa_model','alquran_model');
+$autoload['model'] = array('user_model','hadist_model', 'kategorihadist_model','statuskajian_model');

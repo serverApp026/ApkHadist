@@ -42,8 +42,6 @@
                 <th>Nama</th>
                 <th>email</th>
                 <th>Akses Level</th>
-                <th>telepon</th>
-                <th>Gambar</th>
                 <th>password</th>
                 <th colspan="2">Action</th>
               </tr>
@@ -56,8 +54,6 @@
                 <td><?php echo $user->nama ?></td>
                 <td><?php echo $user->email ?></td>
                 <td><?php echo $user->akses_level ?></td>
-                <td><?php echo $user->telepon ?></td>
-                <td><img src="<?php echo base_url('assets/upload/image/user/'.$user->image) ?>" class="img img-responsive img-thumbnail" width="80" height="80"></td>
                 <td><?php echo $user->password ?></td>
                 <td>
                 <?php include('delete.php') ?>

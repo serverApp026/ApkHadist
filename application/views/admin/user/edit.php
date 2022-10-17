@@ -50,20 +50,6 @@
 								</div>
 							</div>
 
-							<div class="form-group row">
-								<label class="col-md-2 col-form-label">telepon</label>
-								<div class="col-md-5">
-								  <input type="text" name="telepon" class="form-control"  placeholder="Email" value="<?php echo $user->telepon ?>" required>
-								</div>
-							</div>
-
-
-							<div class="form-group row">
-								<label class="col-md-2 col-form-label">Upload Gambar</label>
-								<div class="col-md-10">
-								 <input type="file" name="gambar" class="form-control p-1">
-								</div>
-							</div>
 
 							<div class="form-group row">
 								<label class="col-md-2 col-form-label">Akses_level</label>

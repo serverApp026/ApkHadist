@@ -8,19 +8,19 @@ class Dasbor extends CI_Controller {
 		//proteksi halaman 
 		//load model
 		
-		$this->load->model('jkajian_model');
+		$this->load->model('hadist_model');
 		
 	}
    
 	public function index()
 	{
-		$Jkajian = $this->jkajian_model->Jkajian();
+		$hadist = $this->hadist_model->hadist();
 		// $Jmeja = $this->meja_model->jMeja();
 		// $Jmenu = $this->produk_model->Jmenu();
 		// $Jpegawai = $this->user_model->Jpegawai();
 
 		$data = array ('title' => 'Dashboard',
-					  'Jkajian'=> $Jkajian,
+					  'hadist'=> $hadist,
 					//   'Jmeja'=> $Jmeja,
 					//   'Jmenu'			 => $Jmenu,
 					//   'Jpegawai'			 => $Jpegawai,

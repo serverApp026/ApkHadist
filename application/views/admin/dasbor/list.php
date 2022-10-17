@@ -21,26 +21,22 @@
     <section class="content">
       <div class="container-fluid">
         <!-- Small boxes (Stat box) -->
-        <div class="row">
-
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <?php foreach ($Jkajian as $Jkajian ) { ?>
-            <div class="small-box bg-info">
-              <div class="inner">
-               
-                  <h3><?php echo $Jkajian->total_item ?></h3>
-
-                <p>Jadwal Kajian</p>
+        <div class="row position-relative">
+          <div class="col">
+            <div class="card bg-success">
+              <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="<?php echo base_url('assets/upload/image/img1.png')?>"  class="d-block w-100"  alt="..." style="height: 600px;;">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="<?php echo base_url('assets/upload/image/slider1.png')?>" class="d-block w-100" alt="...">
+                  </div>
+                </div>
               </div>
-              <div class="icon">
-                <i class="ion ion-pricetags"></i>
-              </div>
+             
             </div>
-            <?php } ?> 
           </div>
-
-                    
         </div>
       </div>
     </section>
